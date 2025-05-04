@@ -10,4 +10,5 @@ _The code is released under the GNU General Public License v3.0 without any expl
 
 ## Setup and Usage
 
-Pipeline setup and usage is shown here: [DOMEK pipeline walkthrough](DOMEK_pipeline_walkthrough.html). An interactive `.ipynb` notebook is also provided in `.src/DOMEK_pipeline_walkthrough.ipynb`.
+Pipeline setup and usage is shown here: [DOMEK pipeline walkthrough](https://nbviewer.org/github/avngrdv/DOMEK/blob/main/src/DOMEK_pipeline_walkthrough.ipynb)
+An interactive `.ipynb` notebook is provided in `.src/DOMEK_pipeline_walkthrough.ipynb`.
