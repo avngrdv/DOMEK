@@ -130,7 +130,6 @@ TrackerConfig:
   logs: "../logs"                   # Directory for writing logs to
   parser_out: "../parser_outputs"   # Directory that stores fastqparser outputs
   analysis_out: "../parser_outputs" # Directory that stores outputs of data analysis operations
-  ml_data: "../ml_data"             # Directory for machine learning data
   model: "../tf_trained_models"     # Directory for TensorFlow trained models
   
 LoggerConfig:

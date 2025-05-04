@@ -325,8 +325,6 @@ def sorted_count(arr, top_n=None, return_index=False):
     
     return (X[ind], C[ind])
 
-
-
 def get_S(P, Y):
     '''
     Compute S scores for a list of peptides P according to enrichment scores Y.
@@ -344,3 +342,35 @@ def get_S(P, Y):
         return sum([Y[x,i] for i,x in enumerate(pep)])
         
     return np.array(list(map(F, P)))
+
+def fetch_npy_files(source=None, destination=None):
+    '''
+    Find .npy files inside the source folder 
+    and copy them to the destination folder
+       
+        Parameters:
+                source: str, source folder
+                destination: str, destination folder
+    
+        Returns:
+                None
+    '''    
+    
+    import shutil, os
+    everything = list(os.walk(source))
+
+    if not os.path.isdir(destination):
+        os.makedirs(destination)         
+    
+    for i in everything:
+        for file in i[2]:
+            if file.endswith('.npy'):
+                
+                shutil.copy(os.path.join(i[0], file), 
+                            os.path.join(destination, file))
+    return
+
+
+
+
+

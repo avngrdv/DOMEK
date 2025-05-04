@@ -1,0 +1,166 @@
+[INFO]: <class 'clibas.pipelines.Pipeline'> was succesfully initialized
+[INFO]: <class 'clibas.parsers.FastqParser'> was succesfully initialized
+[INFO]: <class 'clibas.dataanalysis.DataAnalysisTools'> was succesfully initialized
+[INFO]: <class 'clibas.datapreprocessors.DataPreprocessor'> was succesfully initialized
+[INFO]: 13 ops appended to pipeline; current queue size: 13
+[INFO]: Fetching p4_c008_t540_FT_m.gz. . .
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (24840117,)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (24840117,)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <trim> op. . .
+[INFO]: The operation took 119.976 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (24840117,)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (24840117,)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: None
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <translate_dna> op. . .
+[INFO]: The operation took 1454.85 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (24840117, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (24840117, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (24840117, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <length_summary> op. . .
+[INFO]: The operation took 52.409 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (24840117, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (24840117, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (24840117, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <length_filter> op. . .
+[INFO]: The operation took 356.861 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (23944419, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (23944419, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (23944419, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <constant_region_filter> op. . .
+[INFO]: The operation took 306.528 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (23943808, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (23943808, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (23943808, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <variable_region_filter> op. . .
+[INFO]: The operation took 397.813 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (23876208, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (23876208, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (23876208, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <q_score_summary> op. . .
+[INFO]: The operation took 423.705 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (23876208, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (23876208, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (23876208, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <q_score_filter> op. . .
+[INFO]: The operation took 658.422 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 93)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <fetch_region> op. . .
+[INFO]: <fetch_region> op will collapse sample p4_c008_t540_FT_m's internal state
+[INFO]: The operation took 8.945 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <filter_ambiguous> op. . .
+[INFO]: The operation took 296.662 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <fastq_count_summary> op. . .
+[INFO]: The operation took 70.91 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 290)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <unpad_data> op. . .
+[INFO]: The operation took 457.684 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 283)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 283)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <save_data> op. . .
+[INFO]: The operation took 14.534 s
+[INFO]: p4_c008_t540_FT_m dna dataset shape: (22579389, 283)
+[INFO]: p4_c008_t540_FT_m Q dataset shape: (22579389, 283)
+[INFO]: p4_c008_t540_FT_m pep dataset shape: (22579389, 17)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: unnamed X dataset shape: (178997, 16)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.082 s
+[INFO]: unnamed X dataset shape: (178997, 16)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.017 s
+[INFO]: unnamed X dataset shape: (178997, 16)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.089 s
+[INFO]: train_data X dataset shape: (177208, 16)
+[INFO]: train_data y dataset shape: (177208,)
+[INFO]: train_data seq dataset shape: (177208,)
+[INFO]: test_data X dataset shape: (1789, 16)
+[INFO]: test_data y dataset shape: (1789,)
+[INFO]: test_data seq dataset shape: (1789,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <RFA_featurization> op. . .
+[INFO]: The operation took 621.03 s
+[INFO]: train_data X dataset shape: (177208, 39168)
+[INFO]: train_data y dataset shape: (177208,)
+[INFO]: train_data seq dataset shape: (177208,)
+[INFO]: test_data X dataset shape: (1789, 39168)
+[INFO]: test_data y dataset shape: (1789,)
+[INFO]: test_data seq dataset shape: (1789,)
+[INFO]: -----------------------------------------------------------------
+[WARNING]: DataPreprocessor did not receive an F matrix for featurization. Featurization will result in one-hot encoding. . .
+[INFO]: 5 ops appended to pipeline; current queue size: 5
+[INFO]: unnamed X dataset shape: (178997, 17)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.083 s
+[INFO]: unnamed X dataset shape: (178997, 17)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.017 s
+[INFO]: unnamed X dataset shape: (178997, 17)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.042 s
+[INFO]: unnamed X dataset shape: (178997, 18)
+[INFO]: unnamed y dataset shape: (178997,)
+[INFO]: unnamed seq dataset shape: (178997,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.09 s
+[INFO]: train_data X dataset shape: (177208, 18)
+[INFO]: train_data y dataset shape: (177208,)
+[INFO]: train_data seq dataset shape: (177208,)
+[INFO]: test_data X dataset shape: (1789, 18)
+[INFO]: test_data y dataset shape: (1789,)
+[INFO]: test_data seq dataset shape: (1789,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 1.777 s
+[INFO]: train_data X dataset shape: (177208, 18, 204)
+[INFO]: train_data y dataset shape: (177208,)
+[INFO]: train_data seq dataset shape: (177208,)
+[INFO]: test_data X dataset shape: (1789, 18, 204)
+[INFO]: test_data y dataset shape: (1789,)
+[INFO]: test_data seq dataset shape: (1789,)
+[INFO]: -----------------------------------------------------------------

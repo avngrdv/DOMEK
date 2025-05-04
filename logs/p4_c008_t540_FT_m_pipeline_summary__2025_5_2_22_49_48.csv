@@ -1,0 +1,15 @@
+,time,p4_c008_t540_FT_m
+,,24840117.0
+trim,119.976,24840117.0
+translate_dna,1454.85,24840117.0
+length_summary,52.409,24840117.0
+length_filter,356.861,23944419.0
+constant_region_filter,306.528,23943808.0
+variable_region_filter,397.813,23876208.0
+q_score_summary,423.705,23876208.0
+q_score_filter,658.422,22579389.0
+fetch_region,8.945,22579389.0
+filter_ambiguous,296.662,22579389.0
+fastq_count_summary,70.91,22579389.0
+unpad_data,457.684,22579389.0
+save_data,14.534,22579389.0

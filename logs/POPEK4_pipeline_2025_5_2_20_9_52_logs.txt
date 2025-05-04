@@ -1,0 +1,122 @@
+[INFO]: <class 'clibas.pipelines.Pipeline'> was succesfully initialized
+[INFO]: <class 'clibas.parsers.FastqParser'> was succesfully initialized
+[INFO]: <class 'clibas.dataanalysis.DataAnalysisTools'> was succesfully initialized
+[INFO]: <class 'clibas.datapreprocessors.DataPreprocessor'> was succesfully initialized
+[INFO]: 4 ops appended to pipeline; current queue size: 4
+[INFO]: unnamed X dataset shape: (176307, 16)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.081 s
+[INFO]: unnamed X dataset shape: (176307, 16)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.015 s
+[INFO]: unnamed X dataset shape: (176307, 16)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.086 s
+[INFO]: train_data X dataset shape: (174544, 16)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 16)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <RFA_featurization> op. . .
+[INFO]: The operation took 385.561 s
+[INFO]: train_data X dataset shape: (174544, 39168)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 39168)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------
+[WARNING]: DataPreprocessor did not receive an F matrix for featurization. Featurization will result in one-hot encoding. . .
+[INFO]: 5 ops appended to pipeline; current queue size: 5
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.084 s
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.014 s
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.041 s
+[INFO]: unnamed X dataset shape: (176307, 18)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.097 s
+[INFO]: train_data X dataset shape: (174544, 18)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 18)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 1.834 s
+[INFO]: train_data X dataset shape: (174544, 18, 204)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 18, 204)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: 5 ops appended to pipeline; current queue size: 5
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <X_as_int> op. . .
+[INFO]: The operation took 0.08 s
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <shuffle_intraset> op. . .
+[INFO]: The operation took 0.014 s
+[INFO]: unnamed X dataset shape: (176307, 17)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <x_expand_and_pad> op. . .
+[INFO]: The operation took 0.039 s
+[INFO]: unnamed X dataset shape: (176307, 18)
+[INFO]: unnamed y dataset shape: (176307,)
+[INFO]: unnamed seq dataset shape: (176307,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <test_train_split> op. . .
+[INFO]: The operation took 0.089 s
+[INFO]: train_data X dataset shape: (174544, 18)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 18)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------
+[INFO]: Queuing <featurize_X_datasets> op. . .
+[INFO]: The operation took 1.801 s
+[INFO]: train_data X dataset shape: (174544, 18, 204)
+[INFO]: train_data y dataset shape: (174544,)
+[INFO]: train_data seq dataset shape: (174544,)
+[INFO]: test_data X dataset shape: (1763, 18, 204)
+[INFO]: test_data y dataset shape: (1763,)
+[INFO]: test_data seq dataset shape: (1763,)
+[INFO]: -----------------------------------------------------------------

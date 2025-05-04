@@ -488,6 +488,7 @@ def RFA_featurization(X, alphabet=None, order=None):
     '''
     Featurize a list of peptides for fitting reference-free analysis
     models. Refer to Nat Commun 2024, 15, 7953 for further details.
+    
         Parameters
         ----------    
                 X: data (np 2D array, numerically represented) to be featurized
